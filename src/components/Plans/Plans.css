@@ -1,0 +1,175 @@
+.plans-section {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.plans-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 60px;
+}
+
+.plans-element-text-part {
+    height: 600px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    padding-left: 30px;
+    gap: 60px;
+}
+
+.plans-element-text-part div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 30px;
+}
+
+.plans-element-text-part .dollar-sign {
+    font-size: 20px;
+    line-height: 0;
+    margin-top: 10px;
+}
+
+.plans-element-text-part div label {
+    font-size: 25px;
+}
+
+.plans-element-text-part h3 {
+    font-size: 60px;
+    font-weight: normal;
+}
+
+.plans-element-text-part span {
+    font-size: 12px;
+}
+
+.plans-element-text-part button {
+    width: 230px;
+    height: 50px;
+    background-color: rgb(255, 218, 22);
+    border-radius: 56px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #0E0614;
+    border: 1px solid #0E0614;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.plans-element-text-part button:hover {
+    background-color: rgba(255, 218, 22, 0.7);
+}
+
+.plans-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.plans-list li {
+    margin-bottom: 30px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.plans-list li+li {
+    margin-top: 10px;
+}
+
+.plans-icon {
+    margin-right: 10px;
+}
+
+
+/* MEDIA QUERIES =======================> */
+
+
+@media screen and (max-width: 768px) {
+    .plans-container {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .plans-element-text-part {
+        height: auto;
+        padding: 20px;
+    }
+
+    .plans-element-text-part div label {
+        font-size: 22px;
+    }
+
+    .plans-element-text-part h3 {
+        font-size: 48px;
+    }
+
+    .plans-element-text-part button {
+        width: 100%;
+        max-width: 230px;
+    }
+
+    .plans-list li {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .plans-container {
+        padding: 10px;
+    }
+
+    .plans-element-text-part div label {
+        font-size: 20px;
+    }
+
+    .plans-element-text-part h3 {
+        font-size: 42px;
+    }
+
+    .plans-list li {
+        font-size: 12px;
+    }
+}
+
+
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .plans-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 40px;
+    }
+
+    .plans-element-text-part {
+        height: auto;
+        min-height: 550px;
+        padding: 20px;
+    }
+
+    .plans-element-text-part div label {
+        font-size: 22px;
+    }
+
+    .plans-element-text-part h3 {
+        font-size: 50px;
+    }
+
+    .plans-element-text-part button {
+        width: 200px;
+        height: 45px;
+        font-size: 15px;
+    }
+
+    .plans-list li {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+
+    .plans-icon {
+        font-size: 18px;
+    }
+}

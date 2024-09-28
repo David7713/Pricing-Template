@@ -1,0 +1,209 @@
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    gap: 40px;
+    justify-content: start;
+    color: rgb(26, 21, 0) !important;
+}
+
+.footer-logo-section label {
+    margin-left: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+.footer-container div label {
+    font-size: 30px;
+}
+
+.footer-container div ul {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.footer-container div ul li {
+    margin-top: 5px;
+}
+
+.email-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.email-section input {
+    background-color: transparent;
+    border: 1px solid rgb(26, 21, 0);
+    border-radius: 58px;
+    height: 40px;
+    width: 350px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+.email-section input:focus {
+    outline: none;
+    border-color: rgb(26, 21, 0);
+}
+
+.email-section span {
+    margin-top: 20px;
+}
+
+.email-section input::placeholder {
+    color: rgb(26, 21, 0);
+    padding: 10px;
+}
+
+.subscribe-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.subscribe-section p {
+    font-size: 13px;
+}
+
+.email-section button {
+    width: 130px;
+    height: 35px;
+    border: none;
+    background-color: rgb(26, 21, 0);
+    color: white;
+    border-radius: 58px;
+}
+
+.email-section button:hover {
+    background-color: white;
+    color: rgb(26, 21, 0);
+    border: 1px solid rgb(26, 21, 0);
+}
+
+.social-media-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+.social-media-links ul {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+/* 
+MEDIA QUERIES ==============================> */
+@media screen and (max-width: 768px) {
+    .footer-section {
+        padding: 30px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-container div label {
+        font-size: 24px;
+    }
+
+    .email-section input {
+        width: 100%;
+        max-width: 350px;
+    }
+   
+
+    .social-media-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .social-media-links ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer-section {
+        padding: 20px;
+    }
+
+    .footer-logo-section label {
+        font-size: 20px;
+    }
+
+    .footer-container div label {
+        font-size: 20px;
+    }
+
+    .email-section button {
+        width: 100%;
+        max-width: 130px;
+    }
+
+    .social-media-links ul {
+        gap: 15px;
+    }
+}
+
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .footer-section {
+        padding: 40px;
+    }
+
+    .footer-container {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 30px;
+    }
+
+    .footer-container > div {
+        flex-basis: calc(50% - 15px);
+    }
+
+    .footer-container div label {
+        font-size: 26px;
+    }
+
+    .email-section {
+        flex-basis: 100% !important;
+    }
+
+    .email-section input {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .subscribe-section {
+        justify-content: flex-start;
+        gap: 20px;
+    }
+
+    .email-section button {
+        width: 120px;
+    }
+
+    .social-media-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .social-media-links ul {
+        justify-content: flex-start;
+    }
+}

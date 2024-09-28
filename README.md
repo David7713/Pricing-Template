@@ -34,9 +34,9 @@ Install my-project with npm
 
 | Color         | Hex                                                                |
 | ------------- | ------------------------------------------------------------------ |
-| Example Color | ![#C989F9](https://via.placeholder.com/10/006699?text=+) `#C989F9` |
-| Example Color | ![#FFFF00](https://via.placeholder.com/10/10b5cb.?text=+) `#FFFF00.`|
-| Example Color | ![#1A1500](https://via.placeholder.com/10/58585f?text=+) `#1A1500` |
+| Example Color | ![#C989F9](https://via.placeholder.com/10/C989F9?text=+) `#C989F9` |
+| Example Color | ![#FFFF00](https://via.placeholder.com/10/FFFF00.?text=+) `#FFFF00.`|
+| Example Color | ![#1A1500](https://via.placeholder.com/10/1A1500?text=+) `#1A1500` |
 
 
 
